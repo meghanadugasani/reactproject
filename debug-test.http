@@ -1,0 +1,41 @@
+### Test Login with JSON
+POST https://localhost:7043/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "Test123!@#"
+}
+
+### Test Authentication
+GET https://localhost:7043/api/auth/test-auth
+Authorization: Bearer YOUR_TOKEN_HERE
+
+### Test Deposit (requires auth token)
+POST https://localhost:7043/api/wallet/deposit
+Content-Type: application/json
+Authorization: Bearer YOUR_TOKEN_HERE
+
+{
+  "userId": 1,
+  "amount": 1000,
+  "paymentMethod": "UPI",
+  "upiId": "test@paytm"
+}
+
+### Test Withdraw (requires auth token)
+POST https://localhost:7043/api/wallet/withdraw-to-bank
+Content-Type: application/json
+Authorization: Bearer YOUR_TOKEN_HERE
+
+{
+  "userId": 1,
+  "amount": 500,
+  "bankAccountId": "1"
+}
+
+### Test CORS
+OPTIONS https://localhost:7043/api/auth/login
+Origin: https://localhost:7043
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: Content-Type

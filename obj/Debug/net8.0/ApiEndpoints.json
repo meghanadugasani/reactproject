@@ -1,0 +1,1513 @@
+[
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.AuthController",
+    "Method": "GetAccountModes",
+    "RelativePath": "api/Auth/account-modes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "Sharemarketsimulation.DTOs.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "Sharemarketsimulation.DTOs.RegisterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.AuthController",
+    "Method": "RegisterStaff",
+    "RelativePath": "api/Auth/register-staff",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "Sharemarketsimulation.DTOs.RegisterStaffDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.AuthController",
+    "Method": "TestAuth",
+    "RelativePath": "api/Auth/test-auth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.BrokerController",
+    "Method": "GetAllBrokerEarnings",
+    "RelativePath": "api/Broker/all-earnings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.BrokerController",
+    "Method": "GetBrokerEarnings",
+    "RelativePath": "api/Broker/earnings/{brokerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "brokerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.CommissionController",
+    "Method": "GetAllCommissionRates",
+    "RelativePath": "api/Commission",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.CommissionController",
+    "Method": "SetCommissionRate",
+    "RelativePath": "api/Commission/{stockSymbol}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stockSymbol",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rate",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.CommissionController",
+    "Method": "UpdateCommissionRate",
+    "RelativePath": "api/Commission/{stockSymbol}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stockSymbol",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "rate",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.CommissionController",
+    "Method": "GetCommissionRate",
+    "RelativePath": "api/Commission/{stockSymbol}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stockSymbol",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.CommissionController",
+    "Method": "RemoveCommissionRate",
+    "RelativePath": "api/Commission/{stockSymbol}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stockSymbol",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.CommissionController",
+    "Method": "ApproveCommissionRequest",
+    "RelativePath": "api/Commission/requests/approve",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sharemarketsimulation.Controllers.ApproveRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.CommissionController",
+    "Method": "RejectCommissionRequest",
+    "RelativePath": "api/Commission/requests/reject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sharemarketsimulation.Controllers.RejectRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.DocumentsController",
+    "Method": "DeleteDocument",
+    "RelativePath": "api/Documents/{documentId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "documentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.DocumentsController",
+    "Method": "DownloadDocument",
+    "RelativePath": "api/Documents/{documentId}/download",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "documentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.DocumentsController",
+    "Method": "VerifyDocument",
+    "RelativePath": "api/Documents/{documentId}/verify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "documentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "verifiedBy",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "verifyDto",
+        "Type": "Sharemarketsimulation.DTOs.VerifyDocumentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.DocumentsController",
+    "Method": "GetPendingDocuments",
+    "RelativePath": "api/Documents/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.DocumentsController",
+    "Method": "UploadDocument",
+    "RelativePath": "api/Documents/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DocumentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.DocumentsController",
+    "Method": "GetUserDocuments",
+    "RelativePath": "api/Documents/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.EnumsController",
+    "Method": "GetAlertTypes",
+    "RelativePath": "api/Enums/alert-types",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.EnumsController",
+    "Method": "GetDocumentTypes",
+    "RelativePath": "api/Enums/document-types",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.EnumsController",
+    "Method": "GetKYCStatuses",
+    "RelativePath": "api/Enums/kyc-status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.EnumsController",
+    "Method": "GetOrderStatuses",
+    "RelativePath": "api/Enums/order-status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.EnumsController",
+    "Method": "GetOrderTypes",
+    "RelativePath": "api/Enums/order-types",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.EnumsController",
+    "Method": "GetStockCategories",
+    "RelativePath": "api/Enums/stock-categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.EnumsController",
+    "Method": "GetTransactionTypes",
+    "RelativePath": "api/Enums/transaction-types",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.EnumsController",
+    "Method": "GetUserRoles",
+    "RelativePath": "api/Enums/user-roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.MarketController",
+    "Method": "CloseMarket",
+    "RelativePath": "api/Market/close",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.MarketController",
+    "Method": "GetMostActive",
+    "RelativePath": "api/Market/movers/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "count",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.MarketController",
+    "Method": "GetTopGainers",
+    "RelativePath": "api/Market/movers/gainers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "count",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.MarketController",
+    "Method": "GetTopLosers",
+    "RelativePath": "api/Market/movers/losers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "count",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.MarketController",
+    "Method": "OpenMarket",
+    "RelativePath": "api/Market/open",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.MarketController",
+    "Method": "ResetToAutomatic",
+    "RelativePath": "api/Market/reset-automatic",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.MarketController",
+    "Method": "SimulatePriceChanges",
+    "RelativePath": "api/Market/simulate-prices",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "count",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.MarketController",
+    "Method": "GetMarketStatus",
+    "RelativePath": "api/Market/status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.NotificationsController",
+    "Method": "GetNotifications",
+    "RelativePath": "api/Notifications/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.NotificationsController",
+    "Method": "MarkAllAsRead",
+    "RelativePath": "api/Notifications/{userId}/mark-all-read",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.NotificationsController",
+    "Method": "MarkAsRead",
+    "RelativePath": "api/Notifications/{userId}/mark-read/{notificationId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "notificationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.NotificationsController",
+    "Method": "GetUnreadCount",
+    "RelativePath": "api/Notifications/{userId}/unread-count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.OrdersController",
+    "Method": "PlaceOrder",
+    "RelativePath": "api/Orders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderDto",
+        "Type": "Sharemarketsimulation.DTOs.CreateOrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.OrdersController",
+    "Method": "GetAllOrders",
+    "RelativePath": "api/Orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.OrdersController",
+    "Method": "CancelOrder",
+    "RelativePath": "api/Orders/{orderId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.OrdersController",
+    "Method": "ExecuteOrder",
+    "RelativePath": "api/Orders/execute/{orderId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.OrdersController",
+    "Method": "GetPendingOrders",
+    "RelativePath": "api/Orders/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.OrdersController",
+    "Method": "GetTradingData",
+    "RelativePath": "api/Orders/trading-data",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sharemarketsimulation.Controllers.OrdersController\u002BTradingDataRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.OrdersController",
+    "Method": "GetUserOrders",
+    "RelativePath": "api/Orders/user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.PortfolioController",
+    "Method": "GetPortfolio",
+    "RelativePath": "api/Portfolio/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.PortfolioController",
+    "Method": "GetPortfolioAnalytics",
+    "RelativePath": "api/Portfolio/{userId}/analytics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.PortfolioController",
+    "Method": "GetBalance",
+    "RelativePath": "api/Portfolio/{userId}/balance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.PortfolioController",
+    "Method": "GetGainers",
+    "RelativePath": "api/Portfolio/{userId}/gainers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.PortfolioController",
+    "Method": "GetHoldings",
+    "RelativePath": "api/Portfolio/{userId}/holdings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.PortfolioController",
+    "Method": "GetLosers",
+    "RelativePath": "api/Portfolio/{userId}/losers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.PortfolioController",
+    "Method": "GetPerformance",
+    "RelativePath": "api/Portfolio/{userId}/performance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.PortfolioController",
+    "Method": "RebalancePortfolio",
+    "RelativePath": "api/Portfolio/{userId}/rebalance",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.PortfolioController",
+    "Method": "GetTopHoldings",
+    "RelativePath": "api/Portfolio/{userId}/top-holdings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "count",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.PortfolioController",
+    "Method": "GetAppPortfolioSummary",
+    "RelativePath": "api/Portfolio/app-summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.PortfolioController",
+    "Method": "GetDashboardData",
+    "RelativePath": "api/Portfolio/dashboard",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sharemarketsimulation.Controllers.PortfolioController\u002BDashboardRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.ReportsController",
+    "Method": "GetMarketSummary",
+    "RelativePath": "api/Reports/market-summary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.ReportsController",
+    "Method": "GetMonthlyReport",
+    "RelativePath": "api/Reports/monthly/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "year",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "month",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.ReportsController",
+    "Method": "GetPnLReport",
+    "RelativePath": "api/Reports/pnl/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.ReportsController",
+    "Method": "GetUserActivityReport",
+    "RelativePath": "api/Reports/useractivity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.ReportsController",
+    "Method": "GetYearlyReport",
+    "RelativePath": "api/Reports/yearly/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "year",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.StocksController",
+    "Method": "GetAllStocks",
+    "RelativePath": "api/Stocks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.StocksController",
+    "Method": "CreateStock",
+    "RelativePath": "api/Stocks",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDto",
+        "Type": "Sharemarketsimulation.DTOs.CreateStockDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.StocksController",
+    "Method": "GetStock",
+    "RelativePath": "api/Stocks/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.StocksController",
+    "Method": "GetStocksByCategory",
+    "RelativePath": "api/Stocks/category/{category}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "category",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.StocksController",
+    "Method": "SearchStocks",
+    "RelativePath": "api/Stocks/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Symbol",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CompanyName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Category",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MinPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "MaxPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.StocksController",
+    "Method": "UpdatePrice",
+    "RelativePath": "api/Stocks/updateprice",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateDto",
+        "Type": "Sharemarketsimulation.DTOs.UpdateStockPriceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.UsersController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.UsersController",
+    "Method": "GetUser",
+    "RelativePath": "api/Users/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.UsersController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/Users/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateDto",
+        "Type": "Sharemarketsimulation.DTOs.UpdateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.UsersController",
+    "Method": "DeactivateUser",
+    "RelativePath": "api/Users/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.UsersController",
+    "Method": "GetUserBalance",
+    "RelativePath": "api/Users/{id}/balance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.UsersController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Users/{id}/change-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "changePasswordDto",
+        "Type": "Sharemarketsimulation.Controllers.ChangePasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.UsersController",
+    "Method": "ReactivateUser",
+    "RelativePath": "api/Users/{id}/reactivate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.UsersController",
+    "Method": "SuspendUser",
+    "RelativePath": "api/Users/{id}/suspend",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "reason",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.UsersController",
+    "Method": "UpdateKYCStatus",
+    "RelativePath": "api/Users/{id}/update-kyc-status",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.UsersController",
+    "Method": "GetUsersByRole",
+    "RelativePath": "api/Users/role/{role}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.UsersController",
+    "Method": "UpdateKYCStatusPayload",
+    "RelativePath": "api/Users/update-kyc-status",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sharemarketsimulation.Controllers.UsersController\u002BUpdateKYCRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.UsersController",
+    "Method": "GetUserProfile",
+    "RelativePath": "api/Users/user-profile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sharemarketsimulation.Controllers.UsersController\u002BUserProfileRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.WalletController",
+    "Method": "AddFunds",
+    "RelativePath": "api/Wallet/addfunds",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "addFundsDto",
+        "Type": "Sharemarketsimulation.DTOs.AddFundsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.WalletController",
+    "Method": "GetBalance",
+    "RelativePath": "api/Wallet/balance/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.WalletController",
+    "Method": "AddBankAccount",
+    "RelativePath": "api/Wallet/bank-account",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bankAccountDto",
+        "Type": "Sharemarketsimulation.DTOs.BankAccountDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.WalletController",
+    "Method": "GetBankAccounts",
+    "RelativePath": "api/Wallet/bank-accounts/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.WalletController",
+    "Method": "DepositMoney",
+    "RelativePath": "api/Wallet/deposit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "depositDto",
+        "Type": "Sharemarketsimulation.DTOs.DepositRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.WalletController",
+    "Method": "GetPaymentMethods",
+    "RelativePath": "api/Wallet/payment-methods",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.WalletController",
+    "Method": "GetFundTransactions",
+    "RelativePath": "api/Wallet/transactions/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.WalletController",
+    "Method": "GetWalletData",
+    "RelativePath": "api/Wallet/wallet-data",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sharemarketsimulation.Controllers.WalletController\u002BWalletDataRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.WalletController",
+    "Method": "WithdrawFunds",
+    "RelativePath": "api/Wallet/withdraw",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "withdrawDto",
+        "Type": "Sharemarketsimulation.DTOs.WithdrawFundsDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.WalletController",
+    "Method": "WithdrawToBank",
+    "RelativePath": "api/Wallet/withdrawToBank",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "withdrawDto",
+        "Type": "Sharemarketsimulation.DTOs.WithdrawToBankDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.WatchlistController",
+    "Method": "AddToWatchlist",
+    "RelativePath": "api/Watchlist",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "createDto",
+        "Type": "Sharemarketsimulation.DTOs.CreateWatchlistDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.WatchlistController",
+    "Method": "UpdateWatchlist",
+    "RelativePath": "api/Watchlist/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updateDto",
+        "Type": "Sharemarketsimulation.DTOs.UpdateWatchlistDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.WatchlistController",
+    "Method": "RemoveFromWatchlist",
+    "RelativePath": "api/Watchlist/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.WatchlistController",
+    "Method": "GetWatchlist",
+    "RelativePath": "api/Watchlist/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sharemarketsimulation.Controllers.WatchlistController",
+    "Method": "GetTriggeredAlerts",
+    "RelativePath": "api/Watchlist/{userId}/alerts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
